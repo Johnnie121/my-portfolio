@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    background-color: black ;
+    
+}
+.img{
+    border-radius: 90%;
+    margin: auto;
+    display: block;
+}
+h2{
+    margin-top: 49px;
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    animation-direction: alternate-reverse;
+    animation-play-state: running;
+    animation-name: myAnimation;
+    animation-timing-function: 3s;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+}
+.vertical{
+    border: 1px solid white ;
+}
+.vvv{
+    color: aqua;
+    display: flex;
+    gap: 9px;
+    
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+li{
+    list-style: none;
+    padding: 15px;
+    font-size: 30px;
+    border: solid 1px;
+    border-top: none;
+}
+#nav{
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    width:0;
+    height: 100vh;
+    background-color: gray;
+}
+i{
+    color: antiquewhite;
+    font-size: 32px;
+    position: relative;
+    left: 190px;
+    border: none;
+    cursor: pointer;
+}
+.contact{
+    font-style: oblique;
+    font-size: 34px;
+    margin-top: 250px;
+    margin-bottom: 30px;
+}
+.contact-body{
+    animation-name: bodi;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    text-align: center;
+}
+.fa-brands{
+    padding: 60px;
+}
+.ul{
+    display: none;
+}
+.about-me{
+    background-color: gray;
+    min-height: 100vh;
+    padding: 9px;
+
+}
+.image{
+    border-radius: 30px;
+float: left;
+margin-right: 20px;
+}
+.about{
+    font-size: 25px;
+    line-height: 1.5;
+    display: inline;
+    text-emphasis-color: blue;
+}
+button{
+    width: 150px;
+    height: 43px;background-color:white;
+     border: none;
+     border-radius: 9px;
+     display: block;
+     margin: 18px;
+     font-size: 21px;
+}
+
+@keyframes bodi{
+    from{
+        background-color: blue;
+        color: white;
+    }
+    to{
+        font-size: large;
+        background-color: aqua;
+    }
+}
+@keyframes myAnimation{
+    from{
+        color: aqua;
+    }
+    to{
+        color: red;
+    }
+}
+@media only screen and (min-width: 718px){
+ svg{
+        display: none
+    }
+    #nav{
+        display: none;
+    }
+.ul{
+    display: flex;
+    justify-content: flex-end;
+    align-content: space-around;
+    margin-bottom: 55px;
+}}
